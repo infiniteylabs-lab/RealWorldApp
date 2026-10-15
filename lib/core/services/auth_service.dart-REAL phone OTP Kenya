@@ -1,0 +1,17 @@
+import 'package:firebase_auth/firebase_auth.dart';
+class AuthService {
+  final _auth = FirebaseAuth.instance;
+  Future<void> sendOTP(String phone, Function(String) onCodeSent) async {
+    await _auth.verifyPhoneNumber(
+      phoneNumber: phone, // +2547...
+      verificationCompleted: (c) async => await _auth.signInWithCredential(c),
+      verificationFailed: (e) => throw e,
+      codeSent: (id, token) => onCodeSent(id),
+      codeAutoRetrievalTimeout: (id) {},
+    );
+  }
+  Future<UserCredential> verifyOTP(String verId, String smsCode) async {
+    final cred = PhoneAuthProvider.credential(verificationId: verId, smsCode: smsCode);
+    return await _auth.signInWithCredential(cred);
+  }
+}

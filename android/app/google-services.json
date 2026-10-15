@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "552242398394",
+    "project_id": "realworld-2026",
+    "storage_bucket": "realworld-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552242398394:android:48cf55b853143f2c09ee83",
+        "android_client_info": {
+          "package_name": "com.example.realworld_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2LMSxhm-rwfjJoO2fWyWtwuCgg6OXyo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552242398394:android:ae78e547e628e2ea09ee83",
+        "android_client_info": {
+          "package_name": "com.mbula.realworld.realworld_v3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2LMSxhm-rwfjJoO2fWyWtwuCgg6OXyo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
